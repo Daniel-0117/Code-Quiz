@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Handjet:wght@300&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <title>Coding Quiz</title>
+</head>
+
+
+<body>
+    <nav>
+        <img src="./assets/img/Code.gif" alt="Banner containing code" class="banner1">
+    </nav>
+    <div class="timer">Time Left: <span id="timeEL">0</span> </div>
+
+    <div class="highscore"><a href="./highscores.html">See highscores</a></div>
+    
+    <div id="home-screen" class="begin">
+        <h1 class="title">Coding Quiz</h1>
+        <p class="smallBox">
+            Try to answer the following code-related questions within the time limit. Any incorrect answers will penalize you by 10 seconds. Good luck hacker!
+        </p>
+        <button id="start-btn" class="btn1">Begin the Quiz</button>
+    </div>
+
+    <div id="question-screen" class="question">
+        <h2 id="question-title">Question</h2>
+        <div id="question-choices" class="choices">
+            <button class="btn">Choice 1</button>
+            <button class="btn">Choice 2</button>
+            <button class="btn">Choice 3</button>
+            <button class="btn">Choice 4</button>
+        </div>
+
+    <div id="finalScreen" class="final">
+        <h2 id="final-title">All done!</h2>
+        <p id="final-score">Your final score is <span id="score"></span>.</p>
+        <p id="final-score">Enter your initials: <input type="text" id="initials" name="initials" placeholder="Enter your initials here"></p>
+        <button id="submit-btn" class="btn">Submit</button>
+
+        <img src="./assets/img/Coding.jpg" alt="Shodan" class="ai">
+
+        <script src="./assets/js/script.js"></script>
+        <script src="./assets/js/questions.js"></script>
+</body>
+</html>

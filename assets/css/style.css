@@ -1,0 +1,99 @@
+body {
+    font-family: Handjet, sans-serif;
+    font-size: 20px;
+    background-color: black;
+    color: white;
+    display: block;
+    text-align: center;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+}
+
+a:hover {
+    color: darkcyan;
+}
+
+button {
+    font-family: Handjet, sans-serif;
+    font-size: 17px;
+    background-color: black;
+    color: white;
+    border: 2px solid white;
+    border-radius: 5px;
+    padding: 5px;
+    margin: 5px;
+}
+.timer {
+    float: left;
+    font-size: 25px;
+}
+
+.highscore {
+    float: right;
+    font-size: 25px;
+}
+
+.begin {
+    width: 100%;
+    height: 100%;
+    display: flexbox;
+    justify-content: center; 
+    align-items: center;
+}
+
+h1 {
+    font-size: 50px;
+    font-family: Handjet, sans-serif;
+    color: white;
+    text-align: center; 
+    margin: 0;
+    padding: 0;
+}
+
+.smallBox {
+    font-size: 20px;
+    font-family: Handjet, sans-serif;
+    display: block;
+    color: white;
+    /* text-align: center; */
+    margin: 0;
+    padding: 0;
+}
+.btn1 {
+    font-size: 20px;
+    font-family: Handjet, sans-serif;
+    color: white;
+    text-align: center;
+    align-items: center;
+}
+
+.choices {
+    display: block;
+}
+
+button:hover {
+    background-color: darkcyan;
+    color: ghostwhite;
+}
+
+.banner1 {
+    width: 100%;
+    height: 250px;
+
+}
+
+.ai {
+    width: 200px;
+    height: 100%;
+}
+choices {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
