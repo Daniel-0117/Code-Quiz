@@ -1,7 +1,7 @@
 # Code-Quiz
 
 
-Live deployed link or Walkthrough: 
+Live deployed link: https://daniel-0117.github.io/Shodans-Code-Quiz/
 
 ![Static Badge](https://img.shields.io/badge/MIT-license?label=license&labelColor=%2332CD30&color=%23A020F0&link=https%3A%2F%2Fopensource.org%2Flicense%2Fmit%2F)
 
@@ -23,11 +23,7 @@ Once the user is at the quiz homepage all the user has to do is press the begin 
 
 - [Credits](#credits)
 
-- [Team's Githubs](#team-githubs)
-
 - [License](#license)
-
-- [Project requirements](#project-requirements)
 
 # HOME PAGE!
 ![HOME PAGE](./assets/img/Homepage.png)
@@ -44,7 +40,7 @@ Once the user is at the quiz homepage all the user has to do is press the begin 
 - Javascript
 
 ## Credits
-Daniel Pacheco: 
+Daniel Pacheco: https://github.com/Daniel-0117
 
 ## License
 ![Static Badge](https://img.shields.io/badge/MIT-license?label=license&labelColor=%2332CD30&color=%23A020F0&link=https%3A%2F%2Fopensource.org%2Flicense%2Fmit%2F)
