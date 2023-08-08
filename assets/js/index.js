@@ -56,23 +56,23 @@ var timerId;
 
 //Setting up variables to reference DOM elements
 var startBtn = document.getElementById('start-btn');
-var choicesEl = document.getElementById('choices');
-var submitBtn = document.getElementById('submit');
-var feedbackEl = document.getElementById('feedvark');
+var choicesEl = document.getElementById('question-choices');
+var submitBtn = document.getElementById('submit-btn');
+var feed = document.getElementById('feedback');
 var timerEl = document.getElementById('time');
 var initialsEl = document.getElementById('initials');
-var questionsEl = document.getElementById('questions');
+var questionsEl = document.getElementById('question-screen');
 
 function  beginQuiz() {
     // Hide the start screen
-    var startScreenEl = document.getElementById('start-screen');
+    var startScreenEl = document.getElementById('home-screen');
     startScreenEl.setAttribute('class', 'hide');
 
     // Un-hide the questions section
     questionsEl.removeAttribute('class');
 
     // Start the timer
-    timerId = setInterval(clockTick, 1500);
+    timerId = setInterval(timeMove, 1500);
 
     // Show starting time
     timerEl.textContent = time;
@@ -125,28 +125,30 @@ function questionClick() {
         // Display new time on page
         timerEl.textContent = time;
 
-        feedbackEl.textContent = 'Wrong!';
-    }
+    //     feed.textContent = 'You are wrong Hacker!';
+    // } else {
+    //     feed.textContent = 'You are correct!';
+    }   
 
-    feedbackEl.setAttribute('class', 'feedback');
-    setTimeout(function() {
-        feedbackEl.setAttribute('class', 'feedback hide');
-    }   , 1000);
+    // feedbackEl.setAttribute('class', 'feedback');
+//     setTimeout(function() {
+//         // feedbackEl.setAttribute('class', 'feedback hide');
+//     }   , 1000);
 
-    currentQuestr++;
+//     currentQuestr++;
 
-    if (time <= 0 || currentQuestr === questions.length) {
-        quizEnd();
-    }   else {
-        getQuestion();
-    }
-}
+//     if (time <= 0 || currentQuestr === questions.length) {
+//         quizEnd();
+//     }   else {
+//         getQuestion();
+//     }
+// }
 
 function quizEnd() {
     clearInterval(timerId);
 
     // Show end screen
-    var endScreenEl = document.getElementById('end-screen');
+    var endScreenEl = document.getElementById('finalScreen');
     endScreenEl.removeAttribute('class');
 
     // Show final score
@@ -155,7 +157,21 @@ function quizEnd() {
 
     // Hide questions section
     questionsEl.setAttribute('class', 'hide');
+};
+
+setTimeout(function() {
+    // feedbackEl.setAttribute('class', 'feedback hide');
+}   , 1000);
+
+currentQuestr++;
+
+if (time <= 0 || currentQuestr === questions.length) {
+    quizEnd();
+}   else {
+    getQuestion();
 }
+};
+
 
 function timeMove() {
     time--;
@@ -197,7 +213,7 @@ function checkForEnter(event) {
 }
 
 // User clicks button to submit initials
-submitBtn.onclick = saveScore;
+ submitBtn.onclick = saveScore;
 
 // User clicks button to start quiz
 startBtn.onclick = beginQuiz;
