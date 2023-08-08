@@ -95,4 +95,26 @@ button:hover {
     height: 100%;
 }
 
+.scoreH1 {
+    font-size: 100px;
+    font-family: Handjet, sans-serif;
+    color: white;
+    text-align: center; 
+    margin: 0;
+    padding: 0;
+}
+
+.scoreP1 {
+    font-size: 30px;
+    font-family: Handjet, sans-serif;
+    color: white;
+    text-align: center; 
+    margin: 0;
+    padding: 0;
+}
+
+.space {
+    width: 75%;
+    height: 500px;
+}
 
